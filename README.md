@@ -4,7 +4,7 @@ env\Scripts\activate
 
 # Pip installs
 pip install openai
-pip install pyTelegramBotAPI
+pip install aiogram
 
 # Telegram Bot Name
 🇺🇦 ChatGPT OpenAI Bot

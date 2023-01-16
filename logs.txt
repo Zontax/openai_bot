@@ -1,0 +1,85 @@
+[Vadim]: Що ти вмієш?
+
+Я вмію програмувати на різних мовах програмування, таких як Java, Python, C++, JavaScript та HTML. Також я можу створювати веб-сторінки, створювати бази даних, створювати мобільні додатки, спеціально налагоджувати середовище Linux.
+[Vadim]: 
+дівчина в спідниці, красива, rtx, hdr
+[Vadim]: https://oaidalleapiprodscus.blob.core.windows.net/private/org-dCu7ZA0u6DSNuj1mzlb2aBkt/user-gPx49VPAF4F8locdYItTxRjW/img-c9E5HEJ9iUj5033cMdJArpju.png?st=2023-01-15T20%3A21%3A58Z&se=2023-01-15T22%3A21%3A58Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-01-15T19%3A25%3A05Z&ske=2023-01-16T19%3A25%3A05Z&sks=b&skv=2021-08-06&sig=xKctqFf5xkfWEaLJwbL2Y9HdWZuJf42KXTOlvS5dalw%3D
+
+[Vadim]: Що ти вмієш?
+
+Я вмію програмувати на різних мовах, таких як Java, Python, JavaScript, HTML та CSS. Також я маю досвід роботи з базами даних MySQL, MongoDB та PostgreSQL. Я також вмію робити web-дизайн, UI / UX-дизайн, SEO-орієнтовану створення веб-сторінок.
+[Vadim]: 
+putin is dead, rtx, ukraine war
+
+[Vadim]: Що ти вмієш?
+
+[Vadim]: Що ти вмієш?
+
+Я вмію працювати з комп'ютером, розробляти веб-сайти, програмувати, створювати графіку, складати словники, спостерігати за соціальними медіа, управляти базою даних, управляти SEO-маркетингом.
+[Vadim]: 
+putin is dead, rtx, ukraine war
+[Vadim]: 
+putin, rtx, ukraine war
+
+[Vadim]: Що ти вмієш?
+
+Я вмію програмувати на різних мовах, таких як Java, Python, C++, JavaScript та HTML. Також я маю досвід роботи з базами даних, серверною адмініструванням, web-дизайном та SEO.
+
+[Vadim]: Напиши код pyqt5 що парсить курс доллара та напиши інтерфейс до нього і зроби оновлення в реальному часі
+
+import sys
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
+import requests
+ 
+class Window(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.init_ui()
+
+    def init_ui(self):
+
+        self.lbl = QLabel('USD Exchange Rate:')
+
+        self.vbox = QVBoxLayout()
+        self.vbox.addWidget(self.lbl)
+
+        self.setLayout(self.vbox)
+
+        self.show()
+
+    def update_rate(self):
+
+        response = requests.get('https://api.exchangeratesapi.io/latest?base=USD')
+        data = response.json()['rates']
+
+        rate = data['UAH']
+
+        self.lbl.setText('USD Exchange Rate: {} UAH'.format(rate))  # Оновлюємо курс доллара у гривнях у реальному часі
+
+    def start_timer(self):   # Запускаємо таймер, який буде оновлювати курс доллара що 5 секунд
+         timer = QtCore.QTimer(self)   # Ініціалізуємо QtCore Timer
+         timer.timeout.connect(self.update_rate)   # Прив'язуємо update_rate() до timeout signal Timer-a
+         timer.start(5000)   # 5 seconds interval (5000 ms)   # 5 секунд (5000 ms) - тобто 5 000 ms - 1/1000 sec - 1 sec - 1000 ms - 1 min - 60 000 ms - 1 hour - 3 600 000 ms    
+
+     if __name__ == '__main__':   # Main function for running the programm from command line or from IDE like PyCharm etc...    
+         app = QApplication(sys.argv)   # Create an instance of Qt Application    
+         window = Window()   # Create an instance of our Window    
+         window .start_timer()   # Start the timer for updating the exchange rate every 5 seconds    
+         sys .exit (app .exec _())
+
+[Vadim]: Як стати junior unity розробником?
+
+1. Започніть з основ Unity. Навчайтеся розуміти інтерфейс Unity, який включає поняття сцени, об'єкту, компоненту, редактора скриптування, редактора анімацій тощо.
+
+2. Навчайтеся C#. C# - складова Unity, яку ви будете використовувати, щоб створити логіку.
+
+3. Прослуховуйте online-курси Unity. Online-курси Unity - це найкращий спосіб, яким можна навчитися Unity.
+
+4. Продовжуйте розв'язування 3D-модельниx / 2D-модельныx / AI- / VR- / AR- / MR- / XR- / Networking- / Physics-related problems in Unity.
+
+5. Join a game development community and start participating in game jams and hackathons to gain experience and build your portfolio of projects.
+
+
+[Vadim]: Напиши делегат в скрипті Player що надсилає кількість hp скрипту Enemy
+
+public delegate void EnemyHp(int hp);
